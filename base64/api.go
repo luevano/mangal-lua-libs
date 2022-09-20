@@ -3,7 +3,7 @@ package base64
 
 import (
 	"encoding/base64"
-	lio "github.com/vadv/gopher-lua-libs/io"
+	lio "github.com/metafates/mangal-lua-libs/io"
 	lua "github.com/yuin/gopher-lua"
 	"io"
 )
@@ -14,7 +14,7 @@ const (
 	base64DecoderType  = "base64.Decoder"
 )
 
-//CheckBase64Encoding checks the argument at position n is a *base64.Encoding
+// CheckBase64Encoding checks the argument at position n is a *base64.Encoding
 func CheckBase64Encoding(L *lua.LState, n int) *base64.Encoding {
 	ud := L.CheckUserData(n)
 	if encoding, ok := ud.Value.(*base64.Encoding); ok {
@@ -24,7 +24,7 @@ func CheckBase64Encoding(L *lua.LState, n int) *base64.Encoding {
 	return nil
 }
 
-//LVBase64Encoding converts encoding to a UserData type for lua
+// LVBase64Encoding converts encoding to a UserData type for lua
 func LVBase64Encoding(L *lua.LState, encoding *base64.Encoding) lua.LValue {
 	ud := L.NewUserData()
 	ud.Value = encoding
@@ -46,7 +46,7 @@ func LVBase64Decoder(L *lua.LState, reader io.Reader) lua.LValue {
 	return ud
 }
 
-//DecodeString decodes the encoded string with the encoding
+// DecodeString decodes the encoded string with the encoding
 func DecodeString(L *lua.LState) int {
 	encoding := CheckBase64Encoding(L, 1)
 	encoded := L.CheckString(2)
@@ -61,7 +61,7 @@ func DecodeString(L *lua.LState) int {
 	return 1
 }
 
-//EncodeToString decodes the string with the encoding
+// EncodeToString decodes the string with the encoding
 func EncodeToString(L *lua.LState) int {
 	encoding := CheckBase64Encoding(L, 1)
 	decoded := L.CheckString(2)
@@ -71,7 +71,7 @@ func EncodeToString(L *lua.LState) int {
 	return 1
 }
 
-//registerBase64Encoding Registers the encoding type and its methods
+// registerBase64Encoding Registers the encoding type and its methods
 func registerBase64Encoding(L *lua.LState) {
 	mt := L.NewTypeMetatable(base64EncodingType)
 	L.SetField(mt, "__index", L.SetFuncs(L.NewTable(), map[string]lua.LGFunction{
@@ -80,14 +80,14 @@ func registerBase64Encoding(L *lua.LState) {
 	}))
 }
 
-//registerBase64Encoder Registers the encoder type and its methods
+// registerBase64Encoder Registers the encoder type and its methods
 func registerBase64Encoder(L *lua.LState) {
 	mt := L.NewTypeMetatable(base64EncoderType)
 	L.SetGlobal(base64EncoderType, mt)
 	L.SetField(mt, "__index", lio.WriterFuncTable(L))
 }
 
-//registerBase64Decoder Registers the decoder type and its methods
+// registerBase64Decoder Registers the decoder type and its methods
 func registerBase64Decoder(L *lua.LState) {
 	mt := L.NewTypeMetatable(base64DecoderType)
 	L.SetGlobal(base64DecoderType, mt)

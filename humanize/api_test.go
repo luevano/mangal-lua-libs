@@ -1,12 +1,12 @@
 package humanize
 
 import (
+	"github.com/metafates/mangal-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
-	time "github.com/vadv/gopher-lua-libs/time"
+	inspect "github.com/metafates/mangal-lua-libs/inspect"
+	time "github.com/metafates/mangal-lua-libs/time"
 )
 
 func TestApi(t *testing.T) {

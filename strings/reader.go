@@ -1,7 +1,7 @@
 package strings
 
 import (
-	"github.com/vadv/gopher-lua-libs/io"
+	"github.com/metafates/mangal-lua-libs/io"
 	lua "github.com/yuin/gopher-lua"
 	"strings"
 )

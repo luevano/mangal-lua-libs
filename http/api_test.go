@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/sync/errgroup"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"strings"
 	"testing"
 	"time"
 
-	lua_http "github.com/vadv/gopher-lua-libs/http"
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
-	plugin "github.com/vadv/gopher-lua-libs/plugin"
-	lua_time "github.com/vadv/gopher-lua-libs/time"
+	luahttp "github.com/metafates/mangal-lua-libs/http"
+	"github.com/metafates/mangal-lua-libs/inspect"
+	"github.com/metafates/mangal-lua-libs/plugin"
+	luatime "github.com/metafates/mangal-lua-libs/time"
 	lua "github.com/yuin/gopher-lua"
 )
 
@@ -114,17 +114,17 @@ func httpUploadMultipleFileWithFields(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`OK`))
 }
 
-func httpRouterGet(w http.ResponseWriter, r *http.Request) {
+func httpRouterGet(w http.ResponseWriter, _ *http.Request) {
 	w.Write([]byte(`OK`))
 }
 
-func httpRouterGetTimeout(w http.ResponseWriter, r *http.Request) {
+func httpRouterGetTimeout(w http.ResponseWriter, _ *http.Request) {
 	time.Sleep(2 * time.Second)
 	w.Write([]byte(`OK`))
 }
 
 func runHttp(addr string) {
-	err := http.ListenAndServe(addr, nil) // задаем слушать порт
+	err := http.ListenAndServe(addr, nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
@@ -143,7 +143,7 @@ func request(url string) error {
 		return err
 	}
 	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return err
 	}
@@ -189,8 +189,8 @@ func TestApi(t *testing.T) {
 	state := lua.NewState()
 	defer state.Close()
 
-	lua_http.Preload(state)
-	lua_time.Preload(state)
+	luahttp.Preload(state)
+	luatime.Preload(state)
 	inspect.Preload(state)
 	plugin.Preload(state)
 

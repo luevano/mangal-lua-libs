@@ -1,11 +1,11 @@
 package log
 
 import (
+	"github.com/metafates/mangal-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 
-	ioutil "github.com/vadv/gopher-lua-libs/ioutil"
+	ioutil "github.com/metafates/mangal-lua-libs/ioutil"
 )
 
 func TestApi(t *testing.T) {

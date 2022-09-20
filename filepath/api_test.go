@@ -1,8 +1,8 @@
 package filepath
 
 import (
+	"github.com/metafates/mangal-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 )
 

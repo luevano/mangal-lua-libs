@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	lua_json "github.com/vadv/gopher-lua-libs/json"
+	lua_json "github.com/metafates/mangal-lua-libs/json"
 	lua "github.com/yuin/gopher-lua"
 )
 
@@ -81,16 +81,17 @@ func checkClient(L *lua.LState) *LuaClient {
 
 // http.client(config) returns (user data, error)
 // config table:
-//   {
-//     proxy="http(s)://<user>:<password>@host:<port>",
-//     timeout= 10,
-//     insecure_ssl=false,
-//     user_agent = "gopher-lua",
-//     basic_auth_user = "",
-//     basic_auth_password = "",
-//     headers = {"key"="value"},
-//     debug = false,
-//   }
+//
+//	{
+//	  proxy="http(s)://<user>:<password>@host:<port>",
+//	  timeout= 10,
+//	  insecure_ssl=false,
+//	  user_agent = "gopher-lua",
+//	  basic_auth_user = "",
+//	  basic_auth_password = "",
+//	  headers = {"key"="value"},
+//	  debug = false,
+//	}
 func New(L *lua.LState) int {
 	var config *lua.LTable
 	if L.GetTop() > 0 {

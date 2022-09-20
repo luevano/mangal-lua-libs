@@ -1,11 +1,11 @@
 package xmlpath
 
 import (
+	"github.com/metafates/mangal-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
+	inspect "github.com/metafates/mangal-lua-libs/inspect"
 )
 
 func TestApi(t *testing.T) {

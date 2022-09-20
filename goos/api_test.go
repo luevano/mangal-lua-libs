@@ -1,11 +1,11 @@
 package goos
 
 import (
+	"github.com/metafates/mangal-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 
-	runtime "github.com/vadv/gopher-lua-libs/runtime"
+	runtime "github.com/metafates/mangal-lua-libs/runtime"
 )
 
 func TestApi(t *testing.T) {

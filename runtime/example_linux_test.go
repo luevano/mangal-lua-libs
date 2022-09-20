@@ -5,7 +5,7 @@ package runtime
 import (
 	"log"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
+	inspect "github.com/metafates/mangal-lua-libs/inspect"
 	lua "github.com/yuin/gopher-lua"
 )
 
