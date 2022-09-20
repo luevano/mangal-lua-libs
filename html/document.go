@@ -1,9 +1,7 @@
 package html
 
 import (
-	"github.com/metafates/mangal/log"
 	"strings"
-
 	"github.com/PuerkitoBio/goquery"
 	lua "github.com/yuin/gopher-lua"
 )
@@ -22,7 +20,6 @@ func registerDocumentType(L *lua.LState) {
 func parseHTML() lua.LGFunction {
 	return func(L *lua.LState) int {
 		docData := L.ToString(1)
-		log.Info("parsing html: ", docData)
 		doc, err := goquery.NewDocumentFromReader(strings.NewReader(docData))
 		if err != nil {
 			L.Push(lua.LNil)
@@ -50,7 +47,6 @@ func checkDocument(L *lua.LState) *goquery.Document {
 func documentFind(L *lua.LState) int {
 	doc := checkDocument(L)
 	selector := L.ToString(2)
-	log.Info("finding elements with selector: ", selector)
 	s := doc.Find(selector)
 	pushSelection(L, s)
 	return 1
