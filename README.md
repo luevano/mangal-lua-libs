@@ -5,6 +5,8 @@ Lua libraries used by [mangal](https://github.com/metafates/mangal) for custom l
 ## Index
 
 * [base64](/base64) [encoding/base64](https://pkg.go.dev/encoding/base64) api
+* [headless](/headless) headless chrome browser
+* [html](/html) HTML processing
 * [cert_util](/cert_util) monitoring ssl certs
 * [crypto](/crypto) calculate md5, sha256 hash for string
 * [filepath](/filepath) path.filepath port
