@@ -5,6 +5,8 @@ import (
 	"github.com/metafates/mangal-lua-libs/crypto"
 	"github.com/metafates/mangal-lua-libs/filepath"
 	"github.com/metafates/mangal-lua-libs/goos"
+	"github.com/metafates/mangal-lua-libs/headless"
+	"github.com/metafates/mangal-lua-libs/html"
 	"github.com/metafates/mangal-lua-libs/http"
 	"github.com/metafates/mangal-lua-libs/humanize"
 	"github.com/metafates/mangal-lua-libs/inspect"
@@ -28,6 +30,8 @@ import (
 func Preload(L *lua.LState) {
 	for _, preload := range []func(*lua.LState){
 		yaml.Preload,
+		html.Preload,
+		headless.Preload,
 		xmlpath.Preload,
 		time.Preload,
 		template.Preload,
