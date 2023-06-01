@@ -1,4 +1,4 @@
-module github.com/metafates/mangal-lua-libs
+module github.com/luevano/mangal-lua-libs
 
 go 1.18
 
