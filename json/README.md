@@ -1,4 +1,6 @@
-# json [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/json?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/json)
+# json [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/json.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/json)
+
+Lua module for [encoding/json](https://pkg.go.dev/encoding/json).
 
 ## Usage
 

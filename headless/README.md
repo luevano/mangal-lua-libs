@@ -1,4 +1,6 @@
-# Headless
+# headless [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/headless.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/headless)
+
+Lua module for [github.com/go-rod/rod](https://pkg.go.dev/github.com/go-rod/rod).
 
 Headless chrome Lua port.
 

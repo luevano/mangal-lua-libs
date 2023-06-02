@@ -1,4 +1,4 @@
-# Wrappers for golang io
+# io wrappers
 
 *NOTE*: These aren't exposed to LUA directly, but used as utilities for other classes, which need 
 the bridge between lua file and these interfaces: 

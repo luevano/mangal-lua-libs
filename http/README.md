@@ -1,4 +1,6 @@
-# http [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/http?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/http)
+# http [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/http.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/http)
+
+Lua module for [net/http](https://pkg.go.dev/net/http) and related.
 
 ## Functions
 

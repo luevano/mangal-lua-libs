@@ -1,4 +1,6 @@
-# xmlpath [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/xmlpath?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/xmlpath)
+# xmlpath [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/xmlpath.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/xmlpath)
+
+Lua module for [gopkg.in/xmlpath.v2](https://pkg.go.dev/gopkg.in/xmlpath.v2).
 
 ## Usage
 
@@ -31,4 +33,3 @@ for k, v in pairs(iter) do print(v:string()) end
 -- 2
 -- x
 ```
-

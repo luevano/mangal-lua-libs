@@ -1,4 +1,6 @@
-# ioutil [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/ioutil?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/ioutil)
+# ioutil [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/ioutil.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/ioutil)
+
+Lua module for [io/ioutil](https://pkg.go.dev/io/ioutil).
 
 ## Usage
 
@@ -24,4 +26,3 @@ assert(not err, err)
 input_fh:close()
 output_fh:close()
 ```
-

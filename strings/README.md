@@ -1,4 +1,6 @@
-# strings [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/strings?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/strings)
+# strings [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/strings.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/strings)
+
+Lua module for [strings](https://pkg.go.dev/strings).
 
 ## Usage
 

@@ -1,8 +1,9 @@
 # mangal-lua-libs
+[![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs)
 
-Lua libraries used by [mangal](https://github.com/luevano/mangal) for custom lua scrapers.
+[gopher-lua](https://github.com/yuin/gopher-lua) libs used in [mangal](https://github.com/luevano/mangal) for custom Lua scrapers.
 
-This fork was created to fix the [headless](/headless/) module which didn't have a way to close the browser, causing a lot of CPU and memory usage.
+Originally forked from [metafates/mangal-lua-libs](https://github.com/metafates/mangal-lua-libs) to fix the [headless](/headless) module and now sync'd with the original [vadv/gopher-lua-libs](https://github.com/vadv/gopher-lua-libs). Will try to keep it in sync with relevant commits.
 
 ## Index
 

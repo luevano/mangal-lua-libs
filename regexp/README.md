@@ -1,4 +1,6 @@
-# regexp [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/regexp?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/regexp)
+# regexp [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/regexp.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/regexp)
+
+Lua module for [regexp](https://pkg.go.dev/regexp).
 
 ## Usage
 

@@ -1,4 +1,4 @@
-# template [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/template?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/template)
+# template [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/template.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/template)
 
 ## Usage
 
@@ -19,4 +19,3 @@ print( mustache:render("{{#data}} {{.}} {{/data}}", values) )
 ## Supported engines
 
 * [mustache](https://mustache.github.io/) [cbroglie/mustache](https://github.com/cbroglie/mustache)
-

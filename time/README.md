@@ -1,4 +1,6 @@
-# time [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/time?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/time)
+# time [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/time.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/time)
+
+Lua module for [time](https://pkg.go.dev/time).
 
 ## Usage
 
@@ -23,4 +25,3 @@ local result, err = time.format(1543721585, "Jan  2 15:04:05 2006", "Europe/Mosc
 if err then error(err) end
 if not(result == "Dec  2 06:33:05 2018") then error("time.format()") end
 ```
-

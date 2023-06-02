@@ -1,4 +1,6 @@
-# crypto [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/crypto?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/crypto)
+# crypto [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/crypto.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/crypto)
+
+Lua module for [crypto](https://pkg.go.dev/crypto) (`md5` and `sha256`).
 
 ## Functions
 - `md5(string)` - return md5 checksum from string.
@@ -19,4 +21,3 @@ if not(crypto.sha256("1\n") == "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9
     error("sha256")
 end
 ```
-

@@ -1,4 +1,6 @@
-# filepath [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/filepath?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/filepath)
+# filepath [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/filepath.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/filepath)
+
+Lua module for [path/filepath](https://pkg.go.dev/path/filepath).
 
 ## Usage
 
@@ -25,4 +27,3 @@ if not(result == "/var/tmp/file.name") then error("join") end
 local result = filepath.glob("/var/*/*.name")
 if not(result[1] == "/var/tmp/file.name") then error("glob") end
 ```
-

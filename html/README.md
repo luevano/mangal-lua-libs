@@ -1,6 +1,6 @@
-# HTML
+# html [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/html.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/html)
 
-Goquery lua port
+Lua module for [github.com/PuerkitoBio/goquery](https://pkg.go.dev/github.com/PuerkitoBio/goquery).
 
 ## Types
 

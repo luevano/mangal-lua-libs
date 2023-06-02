@@ -1,6 +1,6 @@
-# base64 [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/base64?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/base64)
+# base64 [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/base64.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/base64)
 
-Lua module for [encoding/base64](https://pkg.go.dev/encoding/base64)
+Lua module for [encoding/base64](https://pkg.go.dev/encoding/base64).
 
 ## Usage
 

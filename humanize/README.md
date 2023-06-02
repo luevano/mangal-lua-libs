@@ -1,4 +1,6 @@
-# humanize [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/humanize?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/humanize)
+# humanize [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/humanize.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/humanize)
+
+Lua module for [github.com/dustin/go-humanize](https://pkg.go.dev/github.com/dustin/go-humanize).
 
 ## Usage
 
@@ -24,4 +26,3 @@ if not(time_string == "2 seconds ago") then error("time: "..time_string) end
 local si_result = humanize.si(0.212121, "m")
 if not(si_result == "212.121 mm") then error("si: "..tostring(si_result)) end
 ```
-

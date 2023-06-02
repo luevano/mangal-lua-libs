@@ -1,4 +1,6 @@
-# shellescape [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/shellescape?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/shellescape)
+# shellescape [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/shellescape.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/shellescape)
+
+Lua module for [github.com/alessio/shellescape](https://pkg.go.dev/github.com/alessio/shellescape).
 
 ## Usage
 

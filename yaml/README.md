@@ -1,4 +1,6 @@
-# yaml [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/yaml?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/yaml)
+# yaml [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/yaml.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/yaml)
+
+Lua module for [gopkg.in/yaml.v2](https://pkg.go.dev/gopkg.in/yaml.v2).
 
 ## Usage
 

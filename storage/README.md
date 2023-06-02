@@ -1,4 +1,4 @@
-# storage [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/storage?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/storage)
+# storage [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/storage.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/storage)
 
 ## Usage
 
@@ -34,4 +34,3 @@ if err then error(err) end
 -- list == {"key" = "override"}
 
 ```
-

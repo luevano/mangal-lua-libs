@@ -1,4 +1,6 @@
-# goos [![GoDoc](https://godoc.org/github.com/vadv/gopher-lua-libs/goos?status.svg)](https://godoc.org/github.com/vadv/gopher-lua-libs/goos)
+# goos [![GoDoc](https://pkg.go.dev/badge/github.com/luevano/mangal-lua-libs/goos.svg)](https://pkg.go.dev/github.com/luevano/mangal-lua-libs/goos)
+
+Lua module for [os](https://pkg.go.dev/os).
 
 ## Usage
 
